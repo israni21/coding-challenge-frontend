@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Repositories">
+
+
+    <include
+        layout="@layout/menu_top_navigation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Repositories"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="@font/abeezee"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/noRepoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/repositories"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_issues"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="20dp"
+            android:text="Get Issues"
+            android:textSize="15dp"
+            android:background="#BD4B4B"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textColor="#EEEEEE"
+            android:fontFamily="@font/abeezee"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

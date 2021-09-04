@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".UserActivity">
+
+    <include
+        layout="@layout/menu_top_navigation"/>
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/updated_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#EEEEEE"/>
+
+
+    <Button
+        android:id="@+id/btn_rep"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Repository"
+        android:layout_marginTop="70dp"
+        android:background="#BD4B4B"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:textColor="#EEEEEE"
+        android:textSize="20dp"
+        android:fontFamily="@font/abeezee"/>
+
+</LinearLayout>
